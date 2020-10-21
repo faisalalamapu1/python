@@ -36,7 +36,7 @@
         background: #4e54c8;
         background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
         width: 100%;
-        height: 200vh;
+        height: 250vh;
       }
 
       .circles {
@@ -193,15 +193,17 @@ import datetime
 print(datetime.datetime.now())
 </code>
 </pre>
-      <h5>Variables</h5>
+      <h5>Variables & Data Types</h5>
 <pre>
 <code>
 import datetime
 somoy = datetime.datetime.now()
 print(somoy)
-myNum = 10
+myNum = 10.2
 myName = "Faisal"
+students_grade = [2,5.8,45]
 print(myNum,myName)
+print(type(myNum))
             <div class="text-danger">#You can not use: Numbers at first, operators(+,-,*,/) as variable name</div>
         </code>
     </pre>
@@ -219,7 +221,27 @@ comment with 3
 inverted comma
 """
             </code>
-        </pre>    
+        </pre>
+          <h5>dir</h5>
+    <pre>
+    <code>
+#write in the shell. type python and hit enter. Now type these:
+dir(str) #then press enter
+"hello world".upper() #press enter
+dir(__builtins__)
+            </code>
+            Question: Find the mean/ avarage of the grade that you put in the list
+        </pre>
+        <h5>Comments</h5>
+    <pre>
+    <code>
+student_grade = {"faisal": 10, "alam":20,"apu":30}
+value = sum(student_grade.values())
+element = len(student_grade)
+mean2 = value/ element
+print(mean2)
+            </code>
+        </pre>      
     </div>
   </body>
 </html>
