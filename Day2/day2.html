@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: "Exo", sans-serif;
+        background-color: #4e54c8;
+      }
+
+      .context {
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+      }
+
+      .context h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+      }
+      .context h5 {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+      }
+
+      .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        height: 250vh;
+      }
+
+      .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+      }
+
+      .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+      }
+
+      .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+      }
+
+      .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+      }
+
+      .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+      }
+
+      .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+      }
+
+      .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+      }
+
+      .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+      }
+
+      .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
+        }
+
+        100% {
+          transform: translateY(-1500px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
+        }
+      }
+      pre {
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        border-left: 3px solid #f2334c;
+        color: #666;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+      }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  </head>
+  <body>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="context">
+        <div><a href="../index.html"><h1>Table of Contents</h1></a></div>
+      <h5>Operations of List</h5>
+<pre>
+<code>
+monday_temparature = [2,5,6,7,8]
+#In shell type python and press enter, then write dir(list) and press enter
+#now type in shell: help(list.append) and press enter. now back to code editor.
+print(monday_temparature)
+monday_temparature.append(6.5)
+print(monday_temparature)   
+ind = monday_temparature.index(7)
+print(ind)
+print(monday_temparature.__getitem__(2))
+print(monday_temparature[2])
+#number of items in list using len function
+print(len(monday_temparature))
+print(monday_temparature[1:4])
+print(monday_temparature[:4])
+print(monday_temparature[1:])
+print(monday_temparature[-1])
+myName = 'Faisal'
+print(myName[0:3])
+mixList = ['faisal',2,5,6]
+print(mixList[0][2])
+eng_bg = {"mother":"মা","father":"বাবা"}
+print(eng_bg["mother"])
+</code>
+</pre>
+      <h5>Own Function</h5>
+<pre>
+<code>
+import datetime
+somoy = datetime.datetime.now()
+print(somoy)
+myNum = 10.2
+myName = "Faisal"
+students_grade = [2,5.8,45]
+print(myNum,myName)
+print(type(myNum))
+            <div class="text-danger">#You can not use: Numbers at first, operators(+,-,*,/) as variable name</div>
+        </code>
+    </pre>
+    <h5>Comments</h5>
+    <pre>
+    <code>
+#This is a comment
+
+#Multiple Line comments method-1
+#Multiple Line comments method-1
+
+"""
+Multile line 
+comment with 3 
+inverted comma
+"""
+            </code>
+        </pre>
+          <h5>dir</h5>
+    <pre>
+    <code>
+#write in the shell. type python and hit enter. Now type these:
+dir(str) #then press enter
+"hello world".upper() #press enter
+dir(__builtins__)
+            </code>
+            Question: Find the mean/ avarage of the grade that you put in the list
+        </pre>
+        <h5>Dictionary</h5>
+    <pre>
+    <code>
+student_grade = {"faisal": 10, "alam":20,"apu":30}
+value = sum(student_grade.values())
+element = len(student_grade)
+mean2 = value/ element
+print(mean2)
+            </code>
+        </pre>      
+    </div>
+  </body>
+</html>
